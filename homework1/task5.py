@@ -1,0 +1,20 @@
+# 5. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними
+# в 2D пространстве. https://ru.onlinemschool.com/math/library/analytic_geometry/point_point_length/
+# in
+# - 3
+# - 6
+# - 2
+# - 1
+#
+# out
+# 5.099
+import math
+
+ax = float(input('Введите координаты точки a по оси x:'))
+ay = float(input('Введите координаты точки a по оси y:'))
+bx = float(input('Введите координаты точки b по оси x:'))
+by = float(input('Введите координаты точки b по оси y:'))
+
+distans = round(math.sqrt((ax-bx)**2+(ay-by)**2), 3)
+print(f'Растояние между точкой A до точки B = {distans}' )
+
